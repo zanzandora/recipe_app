@@ -1,7 +1,7 @@
 // @ts-check
-import antfu from '@antfu/eslint-config';
+import antfu from '@antfu/eslint-config'
 
-import withNuxt from './.nuxt/eslint.config.mjs';
+import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(
   antfu(
@@ -9,6 +9,7 @@ export default withNuxt(
       type: 'app',
       vue: true,
       typescript: true,
+      ignores: ['.pnpm-store/**'],
     },
     {
       rules: {
@@ -34,4 +35,4 @@ export default withNuxt(
       },
     },
   ),
-);
+)
