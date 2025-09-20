@@ -13,6 +13,8 @@ export default withNuxt(
     },
     {
       rules: {
+        'prettier/prettier': 'off',
+        'vue/singleline-html-element-content-newline': 'off',
         'ts/no-redeclare': 'off',
         'ts/consistent-type-definitions': ['error', 'type'],
         'no-console': ['warn'],
