@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:force": "nuxt dev --force",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -30,5 +31,21 @@
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14"
+  },
+  "pnpm": {
+    "overrides": {
+      "ipx": "^3.0.0",
+      "sharp": "0.33.4"
+    },
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "unrs-resolver",
+      "vue-demi"
+    ],
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "esbuild",
+      "sharp"
+    ]
   }
 }
