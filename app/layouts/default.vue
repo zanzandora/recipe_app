@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="font-Montserrat mx-auto h-screen max-w-7xl">
+  <div class="font-Montserrat h-screen">
     <base-navigation />
     <!-- <lazy-base-navigation /> -->
 

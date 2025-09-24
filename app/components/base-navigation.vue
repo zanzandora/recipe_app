@@ -93,7 +93,7 @@ const items = ref<NavigationMenuItem[]>([
 </script>
 
 <template>
-  <div class="flex justify-between">
+  <div class="mx-auto flex max-w-7xl justify-between">
     <NuxtImg width="56px" src="/icon-green.png" format="webp" alt="" />
     <UNavigationMenu :items="items" class="justify-center" />
   </div>

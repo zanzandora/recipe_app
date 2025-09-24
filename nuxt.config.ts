@@ -24,4 +24,7 @@ export default defineNuxtConfig({
       subsets: ['latin'], // Subset mặc định
     },
   },
+  image: {
+    domains: ['https://cdn.dummyjson.com'],
+  },
 })

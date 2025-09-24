@@ -10,10 +10,15 @@ export default withNuxt(
       vue: true,
       typescript: true,
       ignores: ['.pnpm-store/**'],
+      stylistic: false,
     },
     {
       rules: {
+        // Tắt hết rules format để nhường Prettier
         'prettier/prettier': 'off',
+        'antfu/format': 'off',
+
+        // Giữ lại rules chất lượng code
         'vue/singleline-html-element-content-newline': 'off',
         'ts/no-redeclare': 'off',
         'ts/consistent-type-definitions': ['error', 'type'],
